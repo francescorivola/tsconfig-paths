@@ -51,7 +51,8 @@
     "precommit": "lint-staged",
     "publish:major": "yarn build && node scripts/publish.js major",
     "publish:minor": "yarn build && node scripts/publish.js minor",
-    "publish:patch": "yarn build && node scripts/publish.js patch"
+    "publish:patch": "yarn build && node scripts/publish.js patch",
+    "prepare": "npm run build"
   },
   "lint-staged": {
     "*.ts": [
